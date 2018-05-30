@@ -1,6 +1,6 @@
-package com.kk.coding.excercise.beans;
+package com.kk.coding.excercise.dto;
 
-public class URLCheckResponse {
+public class CustomAPIResponse {
 	
 	private String status;
 	private String message;
@@ -15,6 +15,11 @@ public class URLCheckResponse {
 	}
 	public void setMessage(String message) {
 		this.message = message;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("CustomAPIResponse [status=%s, message=%s]", status, message);
 	}
 	
 	
