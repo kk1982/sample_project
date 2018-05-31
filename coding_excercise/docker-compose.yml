@@ -2,8 +2,8 @@ version: '3.1'
 
 services:
   url_lookup_service:
-    build: .
-    # image: registry.gitlab.com/idgst/springboot-mongo-demo:latest
+    #build: .
+    image: kk1982/url_lookup_service:0.0.1
     restart: always
     container_name: url_lookup_service
     ports:
